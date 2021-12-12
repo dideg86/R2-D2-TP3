@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class UsuarioController {
     @GetMapping("/usuario")
-    public String greeting(@RequestParam(name="id", required=false, defaultValue = "") Integer id, Model model) {
+    public String usuario(@RequestParam(name="id", required=false, defaultValue = "") Integer id, Model model) {
         IUsuarioRepositorio usuarios = new UsuarioRepositorio();
 
         Usuario usr = usuarios.Obtener(1);

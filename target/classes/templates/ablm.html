@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta, Baja, Listado y Modificación</title>
+</head>
+<body>
+    <strong>
+    <p th:text="'Desde esta página, solo accesible por administradores,'" />
+    <p th:text="'se podrá accederá a las pantallas de Alta, Baja, Listado'" />
+    <p th:text="'y Modificación de Atracciones, Promociones, Usuarios, etc.'" />
+        <p th:text="''" />
+    </strong>
+    <div>
+        <form class="form-group justify-content-center" id="usuario-form" action="login" method="post">
+
+            <div>
+                <label for="user">Nombre de usuario</label>
+                <input name="user" type="text" class="form-control border-0" id="user" >
+                <small id="text" class="text-muted visible">
+                    Must be at least 6 characters long.
+                </small>
+            </div>
+
+            <div class="mb-0">
+                <label for="pass" class="form-label">Contrasena</label>
+                <input name="pass" type="password" class="form-control border-0" aria-describedby="passwordHelpInline" id="pass">
+                <small id="text" class="text-muted visible">
+                    Must be at least 6 characters long.
+                </small>
+            </div>
+
+            <div class="contenedor">
+                <button class="btn btn-login" id="btn-ingresar">
+                    Ingresar
+                    <div class="color"> </div></button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

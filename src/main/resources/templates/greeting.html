@@ -1,17 +1,20 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <title>Bienvenido</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<!--<p th:text="'Hello, ' + ${name} + '!'" />-->
-<p th:text="'Bienvenido a Turismo en la Tierra Media' + '!'" />
-<p th:text="'------' + 'Grupo R2-D2' + '-----'" />
-<p th:text="''" />
-<p th:text="'Seleccione una opción para comenzar' + ':'" />
-<a href="/usuario">Usuarios</a>
-<p th:text="''" />
-<a href="/atraccion">Atracciones</a>
+    <strong>
+        <p th:text="'Bienvenido a Turismo en la Tierra Media' + '!'" />
+        <u><p th:text="'Grupo R2-D2'" /></u>
+        <p th:text="''" />
+        <p th:text="'Seleccione una opción para comenzar' + ':'" /></strong>
+
+        <a href="/atraccion">Listado de Atracciones y Promociones</a>
+        <p th:text="''" />
+        <a href="/usuario">Listado de Usuarios</a>
+        <p th:text="''" />
+        <a href="/ablm">Ingreso para Administradores</a>
 </body>
 </html>
